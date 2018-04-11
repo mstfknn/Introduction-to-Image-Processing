@@ -1,0 +1,11 @@
+Imoon=imread('C:\Users\imp\Downloads\moon.bmp');
+imhist(Imoon);
+Ithr=zeros(size(Imoon));
+Ithr(Imoon>=100)=255;
+Ithr=(Imoon>=200)*255;
+figure;
+colormap gray;
+imagesc(Imoon);
+figure;
+colormap gray;
+imagesc(Ithr);
